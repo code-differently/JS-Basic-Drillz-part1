@@ -1,21 +1,19 @@
 class MathUtilities {
+  add(baseValue, valueToAdd) {
+    return baseValue + valueToAdd;
+  }
 
+  subtract(baseValue, valueToAdd) {
+    return baseValue - valueToAdd;
+  }
 
-    add(baseValue, valueToAdd){
-        return -1;
-    }
+  divide(baseValue, valueToAdd) {
+    return baseValue / valueToAdd;
+  }
 
-    subtract(baseValue, valueToAdd){
-        return -1;
-    }
-
-    divide(baseValue, valueToAdd){
-        return -1;
-    }
-
-    multiply(baseValue, valueToAdd){
-        return -1;
-    }
+  multiply(baseValue, valueToAdd) {
+    return baseValue * valueToAdd;
+  }
 }
 
 module.exports = MathUtilities;
