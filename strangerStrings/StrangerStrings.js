@@ -1,36 +1,40 @@
 class StrangerStrings {
 
     getHelloWorld(){
-        return null;
+        return "Hello World";
     }
 
     concatenation(firstSegment, secondSegment){
-        return null;
+        return firstSegment + secondSegment;
     }
 
     getPrefix(input){
-        return null;
+        return input.substr(0,3);
     }
 
     getSuffix(input){
-        return null;
+        return input.substr(input.length - 3,input.length);
     }
-
+ 
     getMiddleCharacter(input){
-        return null;
-    }
+        let middleOfTheStringPosition
 
+             = Math.floor(input.length / 2);
+      
+        return input.substring(middleOfTheStringPosition,middleOfTheStringPosition+1);
+    }
     getFirstWord(input){
-        return null;
+        return input.slice(0,6);
     }
     
     getSecondWord(spaceDelimnatedInput){
-        return null;
+        return spaceDelimnatedInput.slice(7,11);
     }
     
     reverse(input){
-        return null;
+        return input.split('').reverse().join('');
     }
+    
 }
 
 module.exports = StrangerStrings;
