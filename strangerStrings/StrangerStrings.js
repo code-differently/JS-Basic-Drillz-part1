@@ -9,7 +9,7 @@ class StrangerStrings {
     }
 
     getPrefix(input){
-        return input.substring(0,3);
+        return input.substring(input.length - 6,input.length - 3);
     }
 
     getSuffix(input){
@@ -23,11 +23,11 @@ class StrangerStrings {
         return input.substring(middleOfTheStringPosition,middleOfTheStringPosition+1);
     }
     getFirstWord(input){
-        return input.slice(0,6);
+        return input.slice(input.length - 11,input.length - 5);
     }
     
     getSecondWord(spaceDelimnatedInput){
-        return spaceDelimnatedInput.slice(7,11);
+        return spaceDelimnatedInput.substring(spaceDelimnatedInput.length - 4,spaceDelimnatedInput.length);
     }
     
     reverse(input){
