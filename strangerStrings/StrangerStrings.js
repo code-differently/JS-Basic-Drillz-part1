@@ -5,15 +5,26 @@ class StrangerStrings {
     }
 
     concatenation(firstSegment, secondSegment){
-        return null;
+        return firstSegment + secondSegment;
     }
 
     getPrefix(input){
-        return null;
+        let firstLetter = input[0]
+        let secondLetter = input[1]
+        let thirdLetter = input[2]
+        return firstLetter + secondLetter + thirdLetter;
     }
 
     getSuffix(input){
-        return null;
+
+        // get the 3rd to last letter.
+        let thirdToLastLetter = input[input.length - 3];
+        // get the 2nd letter.
+        let secondToLastLetter = input[input.length - 2];
+        // get the last letter.
+        let lastLetter = input[input.length - 1];
+        return thirdToLastLetter + secondToLastLetter + lastLetter;
+        
     }
 
     getMiddleCharacter(input){
