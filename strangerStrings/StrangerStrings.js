@@ -9,17 +9,16 @@ class StrangerStrings {
     }
 
     getPrefix(input){
-        return input.substr(0,3);
+        return input.substring(0,3);
     }
 
     getSuffix(input){
-        return input.substr(input.length - 3,input.length);
+        return input.substring(input.length - 3,input.length);
     }
  
     getMiddleCharacter(input){
         let middleOfTheStringPosition
-
-             = Math.floor(input.length / 2);
+         = Math.floor(input.length / 2);
       
         return input.substring(middleOfTheStringPosition,middleOfTheStringPosition+1);
     }
