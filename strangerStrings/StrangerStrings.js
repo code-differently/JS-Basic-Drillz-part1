@@ -52,22 +52,3 @@ class StrangerStrings {
 
 module.exports = StrangerStrings;
 
-// getPrefix(input){
-//     return input = input.substring(0, 3);
-// }
-
-// getSuffix(input){
-//     return input = input.substring(3, 7);
-// }
-
-// getMiddleCharacter(input){
-//     return input.substring(5, 4);
-// }
-
-// getFirstWord(input){
-//     return input = input.substring(0, 6);
-// }
-
-// getSecondWord(spaceDelimnatedInput){
-//     return "Clan";
-// }
