@@ -20,18 +20,19 @@ class StrangerStrings {
     }
 
     getMiddleCharacter(input){
-        const mid = Math.trunc(input.length / 2);
+        const mid = Math.trunc(input.length / 2); //could also use Math.floor()
         return input[mid];
     }
 
     getFirstWord(input){
-        let output = "";
-        for (let i=0; i<input.length; i++) {
-            if (input[i] === " ") {
-                return output;
-            }
-            output += input[i];
-        }
+        // let output = "";
+        // for (let i=0; i<input.length; i++) {
+        //     if (input[i] === " ") {
+        //         return output;
+        //     }
+        //     output += input[i];
+        // }
+        return input.split(' ')[0];
     }
     
     getSecondWord(spaceDelimnatedInput){
