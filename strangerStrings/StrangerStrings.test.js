@@ -1,4 +1,4 @@
-const { TestScheduler } = require('jest');
+// const { TestScheduler } = require('jest');
 const StrangerStrings = require('./StrangerStrings');
 
 
@@ -46,9 +46,9 @@ test("return the first 3 characters of `input`", () => {
 test("return the last 3 characters of `input`", () => {
     // Given
     let strangerStrings = new StrangerStrings();
-    let input = 'Wutang';
+    let input = 'WutangForever';
 
-    let expected = "ang";
+    let expected = "ver";
 
 
     // When
@@ -65,9 +65,8 @@ test("return the middle character of `inputValue`", () => {
 
     let expected = "o";
 
-
     // When
-    let actual = strangerStrings.getMiddleCharacter(input);
+    let actual = strangerStrings.getMiddleCharacter(inputValue);
     //Then
     expect(actual).toEqual(expected);
 });
