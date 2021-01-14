@@ -51,7 +51,7 @@ class StrangerStrings {
         length = 1;
     }
     return inputValue.substring(position, position + length);
-}
+    }
 
     getFirstWord(inputValue) {
         //return input.slice(input.length - 11,input.length - 5);
@@ -61,7 +61,7 @@ class StrangerStrings {
     }
     
     getSecondWord(inputValue){
-        let  secondWord = inputValue.split(' ');
+        let secondWord = inputValue.split(' ');
         return secondWord[1];
     }
     
