@@ -22,12 +22,16 @@ class StrangerStrings {
       
         return input.substring(middleOfTheStringPosition,middleOfTheStringPosition+1);
     }
-    getFirstWord(input){
-        return input.slice(input.length - 11,input.length - 5);
+    getFirstWord(inputValue){
+        var firstWord = inputValue.split(" ");
+        return firstWord[0];
+       // return input.slice(input.length - 11,input.length - 5);
     }
     
-    getSecondWord(spaceDelimnatedInput){
-        return spaceDelimnatedInput.substring(spaceDelimnatedInput.length - 4,spaceDelimnatedInput.length);
+    getSecondWord(inputValue){
+        var secondWord = inputValue.split(" ");
+        return secondWord[1];
+        //return spaceDelimnatedInput.substring(spaceDelimnatedInput.length - 4,spaceDelimnatedInput.length);
     }
     
     reverse(input){
