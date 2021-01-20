@@ -1,36 +1,60 @@
 class StrangerStrings {
-
     getHelloWorld(){
-        return null;
+        return "Hello World" ;
     }
-
     concatenation(firstSegment, secondSegment){
-        return null;
+        return firstSegment + secondSegment;
     }
-
     getPrefix(input){
-        return null;
+        return input.substring(0, 3);
     }
-
     getSuffix(input){
-        return null;
+        //return input.substring(input.length-3, input.length);
+        // Find the last leter of the word.
+        let firstLetter= input.charAt(input.length-3);
+        // find the 2nd to last letter;
+        let secondLetter= input.charAt(input.length-2);
+        // find the 3rd to last letter
+        let thirdLetter= input.charAt(input.length-1);
+        // combine letters
+        let answer= firstLetter + secondLetter + thirdLetter;
+        return answer;
     }
+    getMiddleCharacter(inputValue){
+        var position;
+        var length;
+        if(inputValue.length % 2 == 0) {
+            position = inputValue.length / 2 - 1;
+            length = 2;
+        } else {
+            position = (inputValue.length - 1)/ 2;
+            length = 1;
 
-    getMiddleCharacter(input){
-        return null;
+
+        }
+        return inputValue.substring(position, position + length)
     }
-
     getFirstWord(input){
-        return null;
+        var firstWord = input.substr(0, input.indexOf(" "));
+        return firstWord;
+        
     }
     
-    getSecondWord(spaceDelimnatedInput){
-        return null;
-    }
+   
     
-    reverse(input){
-        return null;
-    }
+    getSecondWord(input){
+        var secondWord = input.split(" ");
+            return secondWord[1];
+            
 }
+
+    reverse(input){
+            var newString = "";
+            for (var i = input.length - 1; i >= 0; i--) { 
+                newString += input[i];
+            }
+            return newString;
+        }
+    }
 
 module.exports = StrangerStrings;
