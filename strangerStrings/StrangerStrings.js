@@ -1,36 +1,51 @@
 class StrangerStrings {
 
-    getHelloWorld(){
-        return null;
+    getHelloWorld() {
+        let answer = "Hello World";
+        return answer;
+
     }
 
-    concatenation(firstSegment, secondSegment){
-        return null;
+    concatenation(firstSegment, secondSegment) {
+        return firstSegment + secondSegment;
+
     }
 
-    getPrefix(input){
-        return null;
+    getPrefix(input) {
+        let str = 'Wutang';
+        let res = str.substring(0, 3);
+        return res;
     }
 
-    getSuffix(input){
-        return null;
+
+    getSuffix(input) {
+        let str = 'Wutang';
+        let res = str.substring(6, 3);
+        return res;
     }
 
-    getMiddleCharacter(input){
-        return null;
+    getMiddleCharacter(input) {
+        let str = 'MethodMan';
+        let res = str.charAt(4, 5);
+        return res;
     }
 
-    getFirstWord(input){
-        return null;
+    getFirstWord(input) {
+        let str = 'Wutang';
+        let res = str.substring('Wutang');
+        return res;
     }
-    
-    getSecondWord(spaceDelimnatedInput){
-        return null;
-    }
-    
-    reverse(input){
-        return null;
-    }
-}
 
-module.exports = StrangerStrings;
+    getSecondWord(spaceDelimnatedInput) {
+        let str = 'Clan';
+        let res = str.substring('clan');
+        return res;
+    }
+
+    reverse(input) {
+        let str = 'WutangClan';
+        let res = str.reverseSubtring('nalCgnatuW');
+        return res;
+    }
+
+    module.exports = StrangerStrings;
