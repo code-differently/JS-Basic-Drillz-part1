@@ -1,36 +1,46 @@
 class StrangerStrings {
+  getHelloWorld() {
+    return "Hello World";
+  }
 
-    getHelloWorld(){
-        return null;
-    }
+  concatenation(firstSegment, secondSegment) {
+    return firstSegment + secondSegment;
+  }
 
-    concatenation(firstSegment, secondSegment){
-        return null;
-    }
+  getPrefix(input) {
+    return input.substr(0, 3);
+  }
 
-    getPrefix(input){
-        return null;
-    }
+  getSuffix(input) {
+    return input.substr(input.length - 3, input.length);
+  }
 
-    getSuffix(input){
-        return null;
+  getMiddleCharacter(inputValue) {
+    let position;
+    let length;
+    if (inputValue.length % 2 == 0) {
+      position = inputValue.length / 2 - 1;
+      length = 2;
+    } else {
+      position = (inputValue.length - 1) / 2;
+      length = 1;
     }
+    return inputValue.substring(position, position + length);
+  }
 
-    getMiddleCharacter(input){
-        return null;
-    }
+  getFirstWord(inputValue) {
+    let getFirst = inputValue.split(" ");
+    return getFirst[0];
+  }
 
-    getFirstWord(input){
-        return null;
-    }
-    
-    getSecondWord(spaceDelimnatedInput){
-        return null;
-    }
-    
-    reverse(input){
-        return null;
-    }
+  getSecondWord(inputValue) {
+    let getSecond = inputValue.split(" ");
+    return getSecond[1];
+  }
+
+  reverse(inputValue) {
+    return inputValue.split("").reverse().join("");
+  }
 }
 
 module.exports = StrangerStrings;
