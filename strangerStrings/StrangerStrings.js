@@ -28,7 +28,7 @@ return  last3char + last2char + lastchar
     }
 
     getMiddleCharacter(inputValue) {
-      //Figure out stringlength and to find out midpoint. Declare the variables for this
+      //Check stringlength and find out midpoint. Declare the variables for this
               let midpoint;
               let length;
       //for even #characters -returning 1 character. NOTE this is for odd string length
@@ -55,9 +55,6 @@ return  last3char + last2char + lastchar
               
           
   
-  getSecondWord(spaceDelimnatedInput){
-      return null;
-  }
 
   getSecondWord(inputValue){
     inputValue = "Wutang Clan";
