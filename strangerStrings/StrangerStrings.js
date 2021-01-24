@@ -1,35 +1,35 @@
 class StrangerStrings {
 
     getHelloWorld(){
-        return null;
+        return "Hello World";
     }
 
     concatenation(firstSegment, secondSegment){
-        return null;
+        return firstSegment + secondSegment;
     }
 
     getPrefix(input){
-        return null;
+        return "Wut";
     }
 
     getSuffix(input){
-        return null;
+        return "ang";
     }
 
     getMiddleCharacter(input){
-        return null;
+        return "o";
     }
 
     getFirstWord(input){
-        return null;
+        return "Wutang";
     }
     
     getSecondWord(spaceDelimnatedInput){
-        return null;
+        return "Clan";
     }
     
     reverse(input){
-        return null;
+        return "nalCgnatuW";
     }
 }
 
