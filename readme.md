@@ -9,7 +9,7 @@ npm install -g jest
 Then run
 
 ```
-npm install
+npm installnpm
 ```
 
 To run all the test cases
